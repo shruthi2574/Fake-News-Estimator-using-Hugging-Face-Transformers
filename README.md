@@ -40,12 +40,10 @@ This project uses Hugging Face's sentiment analysis model to evaluate the **tone
 ### 🟢 Run in Google Colab (Recommended)
 
 1. Open [Google Colab](https://colab.research.google.com)
-```
-   
-3. Run each code blocks in Separate cells in Google colab
+2. Run each code block in separate cells in the notebook:
 
    ```bash
-   # Example format
+ # Example format
 # 1st Cell
 from transformers import pipeline
 classifier = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
@@ -54,8 +52,9 @@ classifier = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingua
 text = input("Enter a news article: ")
 result = classifier(text)[0]
 # etc...
-```
-```
+
+   ```
+
 ## 💡 Example Output
 
 ```
