@@ -43,6 +43,7 @@ This project uses Hugging Face's sentiment analysis model to evaluate the **tone
 ```
 2. Run each code block in separate cells in the notebook:
  # Example format
+
 # 1st Cell
 from transformers import pipeline
 classifier = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
