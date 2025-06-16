@@ -40,6 +40,7 @@ This project uses Hugging Face's sentiment analysis model to evaluate the **tone
 ### 🟢 Run in Google Colab (Recommended)
 
 1. Open [Google Colab](https://colab.research.google.com)
+   
 2. Run each code blocks in Separate cells in Google colab
    
 ```
