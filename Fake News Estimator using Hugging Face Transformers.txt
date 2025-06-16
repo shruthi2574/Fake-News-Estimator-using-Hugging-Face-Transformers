@@ -1,0 +1,31 @@
+Run all in Google Colab step-wise in different cells
+step-1:
+!pip install transformers
+step-2:
+from transformers import pipeline
+
+# Load a public Hugging Face sentiment model (no token required)
+classifier = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
+step-3:
+print("📰 Fake News Estimator (via Sentiment Analysis)")
+
+while True:
+    text = input("\nEnter a news article (or type 'exit'): ")
+    if text.lower() == 'exit':
+        break
+
+    result = classifier(text)[0]
+    label = result['label']   # e.g., '1 star', '5 stars'
+    score = result['score']
+
+    # Interpret "low-star" sentiment as likely fake
+    stars = int(label[0])
+    if stars <= 2:
+        classification = "🔴 FAKE (low credibility)"
+    elif stars >= 4:
+        classification = "🟢 REAL (credible tone)"
+    else:
+        classification = "⚠️ UNCERTAIN"
+
+    print(f"\n🔍 Sentiment: {label}, Confidence: {score:.2f}")
+    print(f"📊 Prediction: {classification}")
