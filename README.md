@@ -43,7 +43,7 @@ This project uses Hugging Face's sentiment analysis model to evaluate the **tone
 2. Run each code blocks in Separate cells in Google colab
    
 ```
-
+```
 ## 💡 Example Output
 
 ```
