@@ -83,6 +83,7 @@ fack_news-estimator/
 ## 🙋‍♀️ Author
 
 Gugulothu Shruthi 
+<br>
 B.Tech,CSE—Narayanamma Institute of Technology  
 ✉️ [gugulothushruthi@gmail.com](mailto:gugulothushruthi@gmail.com)
 
